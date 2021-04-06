@@ -1,5 +1,5 @@
-# jsutils
-Utility functions for common tasks
+# BoringUtils
+Utility functions for common tasks in JavaScript that you hate to have to write out all the time plus some that may come in handy
 
 ### objIsEmpty(obj)
 Checks if JavaScript object is empty. This includes `null` and `undefined` objects
