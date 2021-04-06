@@ -32,11 +32,12 @@ exports.makeid = (length) => {
 
  //removes specified item and returns updated array
  exports.removeArrayItem = (item, array) => {
-     const index = array.indexOf(item);
-     if(index >= -1){
-         array.splice(index, 1);
+     let newArray = [...array];
+     const index = newArray.indexOf(item);
+     if(index > -1){
+        newArray.splice(index, 1);
      }
-     return array;
+     return newArray ;
  };
 
  // pretty prints time from seconds
