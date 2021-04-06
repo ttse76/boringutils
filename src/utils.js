@@ -31,7 +31,7 @@ exports.makeid = (length) => {
  };
 
  //removes specified item and returns updated array
- exports.removeArrayItem = (array, item) => {
+ exports.removeArrayItem = (item, array) => {
      const index = array.indexOf(item);
      if(index >= -1){
          array.splice(index, 1);
