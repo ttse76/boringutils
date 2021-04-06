@@ -1,5 +1,5 @@
 {
-  "name": "boringutils",
+  "name": "mundane-utils",
   "version": "1.0.0",
   "description": "Common utility functions for javascript",
   "main": "src/utils.js",
@@ -8,10 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "boringutils"
+    "url": "mundane-utils"
   },
   "keywords": [
-    "utils"
+    "utils",
+    "node",
+    "js",
+    "utilities"
   ],
   "author": "",
   "license": "ISC"
