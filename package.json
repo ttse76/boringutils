@@ -1,14 +1,14 @@
 {
-  "name": "jsutils",
+  "name": "boringutils",
   "version": "1.0.0",
-  "description": "Utility functions for javascript",
+  "description": "Common utility functions for javascript",
   "main": "src/utils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "jsutils"
+    "url": "boringutils"
   },
   "keywords": [
     "utils"
