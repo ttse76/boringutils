@@ -3,12 +3,13 @@
   "version": "1.0.2",
   "description": "Common utility functions for javascript",
   "main": "src/utils.js",
+  "homepage": "https://github.com/ttse76/mundane-utils#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "mundane-utils"
+    "url": "https://github.com/ttse76/mundane-utils.git"
   },
   "keywords": [
     "utils",
