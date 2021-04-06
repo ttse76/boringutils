@@ -10,6 +10,18 @@ npm i mundane-utils
 const utils = require('mundane-utils');
 ```
 
+### getRanNum(min, max)
+Returns random integer between `min` and `max`
+```javascript
+utils.getRanNum(1,10);
+```
+
+### makeid(length)
+Returns a string of `length` length of random letters and numbers.
+```javascript
+utils.makeid(5);
+```
+
 ### objIsEmpty(obj)
 Checks if JavaScript object is empty. This includes `null` and `undefined` objects
 ```javascript
@@ -21,35 +33,6 @@ utils.objIsEmpty(obj1);
 
 // Returns false
 utils.objIsEmpty(obj2);
-```
-
-### stringIsEmpty(string)
-Checks if string is empty. This includes `null` and `undefined` strings
-```javascript
-const str1 = '';
-const str2 = undefined;
-const str3 = 'hello world';
-
-// Returns true
-utils.stringIsEmpty(str1);
-
-// Returns true
-utils.stringIsEmpty(str2);
-
-// Returns false
-utils.stringIsEmpty(str1);
-```
-
-### makeid(length)
-Returns a string of `length` length of random letters and numbers.
-```javascript
-utils.makeid(5);
-```
-
-### getRanNum(min, max)
-Returns random integer between `min` and `max`
-```javascript
-utils.getRanNum(1,10);
 ```
 
 ### printTime(timeInSeconds)
@@ -77,3 +60,19 @@ ar = utils.removeArrayItem('a', ar);
 ar = utils.removeArrayItem('d', ar);
 ```
 
+### stringIsEmpty(string)
+Checks if string is empty. This includes `null` and `undefined` strings
+```javascript
+const str1 = '';
+const str2 = undefined;
+const str3 = 'hello world';
+
+// Returns true
+utils.stringIsEmpty(str1);
+
+// Returns true
+utils.stringIsEmpty(str2);
+
+// Returns false
+utils.stringIsEmpty(str1);
+```
