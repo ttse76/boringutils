@@ -43,13 +43,14 @@ exports.makeid = (length) => {
  // pretty prints time from seconds
  exports.printTime = (timeInSeconds) => {
      //(n < 10) ? ("0" + n) : n
-    const hours = Math.floor(timeInSeconds / 3600);
+    const hours = (Math.floor(timeInSeconds / 3600) < 10) ? '0' + Math.floor(timeInSeconds / 3600) : Math.floor(timeInSeconds / 3600);
+    timeInSeconds -= (3600*hours);
     const minutes = (Math.floor(timeInSeconds / 60) < 10) ? '0' + (Math.floor(timeInSeconds / 60)) : (Math.floor(timeInSeconds / 60));
     const seconds = (Math.round(timeInSeconds - minutes * 60) < 10) ? '0' + Math.round(timeInSeconds - minutes * 60): Math.round(timeInSeconds - minutes * 60);
     let time = '';
     let flag = false;
 
-    if(hours !== 0){
+    if(hours !== '00'){
         time += hours;
         flag = true;
     }
