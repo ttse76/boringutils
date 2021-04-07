@@ -60,3 +60,11 @@ exports.makeid = (length) => {
     time += minutes + ':' + seconds;
     return time;
  };
+
+ exports.stringUnNull = (str) => {
+    if(str === '' || str === undefined || str === null){
+        return '';
+    }else{
+        return str;
+    }
+ }

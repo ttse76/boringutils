@@ -77,6 +77,15 @@ const run = () => {
     const time2 = 7356;
     tests.push(test(utils.printTime(time2), '02:02:36', 'printTime'));
 
+    //stringUnNull (10,11)
+    const nul1 = null;
+    const nul2 = undefined;
+    const nul3 = 'test';
+
+    tests.push(test(utils.stringUnNull(nul1), '', 'stringUnNull'));
+    tests.push(test(utils.stringUnNull(nul2), '', 'stringUnNull'));
+    tests.push(test(utils.stringUnNull(nul3), 'test', 'stringUnNull'));
+
     printResults(tests) 
 };
 run();

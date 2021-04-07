@@ -1,6 +1,6 @@
 {
   "name": "mundane-utils",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Common utility functions for javascript",
   "main": "src/utils.js",
   "homepage": "https://github.com/ttse76/mundane-utils#readme",

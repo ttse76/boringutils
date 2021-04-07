@@ -76,3 +76,20 @@ utils.stringIsEmpty(str2);
 // Returns false
 utils.stringIsEmpty(str1);
 ```
+
+### stringUnNull(string)
+If the string is null or undefined, it returns a blank string. Else returns input string
+```javascript
+const str1 = null;
+const str2 = undefined;
+const str3 = 'hello world';
+
+// Returns ''
+utils.stringIsEmpty(str1);
+
+// Returns ''
+utils.stringIsEmpty(str2);
+
+// Returns 'hello world'
+utils.stringIsEmpty(str1);
+```
