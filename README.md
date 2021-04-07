@@ -48,7 +48,7 @@ utils.printTime(time1);
 utils.printTime(time2);
 ```
 
-### removeArrayItem(array, item)
+### removeArrayItem(item, array)
 Removes specified `item` from `array` and returns the new array.
 ```javascript
 let ar = ['a','b','c'];
