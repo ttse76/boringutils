@@ -1,12 +1,20 @@
-// Checks if passed in object is empty
+/**
+ * Checks if passed in object is empty
+ * @param {object} jsObj object to be checked
+ * @returns true or false
+ */
 exports.objIsEmpty = (jsObj) => {
-    if(Object.keys(jsObj).length === 0 || jsObj === null || jsObj === undefined){
+    if(jsObj === null || jsObj === undefined || Object.keys(jsObj).length === 0){
         return true;
     }
     return false;
 };
 
-// Checks if passed in string is empty
+/**
+ * Checks if passed in string is empty
+ * @param {string} str 
+ * @returns true or false
+ */
 exports.stringIsEmpty = (str) => {
     if(str === undefined || str === null || str.trim() === ''){
         return true;
@@ -14,7 +22,11 @@ exports.stringIsEmpty = (str) => {
     return false;
 };
 
-// returns a unique id string of length
+/**
+ * Returns a unique id string of length
+ * @param {string} length length of id
+ * @returns id of length
+ */
 exports.makeid = (length) => {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -25,12 +37,22 @@ exports.makeid = (length) => {
     return result;
  }
 
- // returns a random integer between min and max
+ /**
+  * Returns a random integer between min and max
+  * @param {Number} min 
+  * @param {Number} max 
+  * @returns a random integer between min and max
+  */
  exports.getRanNum = (min, max) => {
      return Math.floor(Math.random() * (max-min) + min) ;
  };
 
- //removes specified item and returns updated array
+ /**
+  * Removes specified item and returns updated array.
+  * @param {*} item 
+  * @param {array} array 
+  * @returns array with removed item
+  */
  exports.removeArrayItem = (item, array) => {
      let newArray = [...array];
      const index = newArray.indexOf(item);
@@ -40,7 +62,12 @@ exports.makeid = (length) => {
      return newArray ;
  };
 
- // pretty prints time from seconds
+ /**
+  * Pretty prints time from seconds
+  * Format is HH:MM:SS
+  * @param {Number} timeInSeconds the time to print in seconds
+  * @returns time in HH:MM:SS format
+  */
  exports.printTime = (timeInSeconds) => {
      //(n < 10) ? ("0" + n) : n
     const hours = (Math.floor(timeInSeconds / 3600) < 10) ? '0' + Math.floor(timeInSeconds / 3600) : Math.floor(timeInSeconds / 3600);
@@ -61,6 +88,12 @@ exports.makeid = (length) => {
     return time;
  };
 
+ /**
+  * Un-nulls string by returning a blank string if passed in string is null or undefined
+  * Returns passed in string if it has a value
+  * @param {*} str 
+  * @returns blank or original string
+  */
  exports.stringUnNull = (str) => {
     if(str === '' || str === undefined || str === null){
         return '';

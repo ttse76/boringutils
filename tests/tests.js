@@ -86,6 +86,15 @@ const run = () => {
     tests.push(test(utils.stringUnNull(nul2), '', 'stringUnNull'));
     tests.push(test(utils.stringUnNull(nul3), 'test', 'stringUnNull'));
 
+    const obj1 = {};
+    const obj2 = undefined;
+    const obj3 = null;
+    const obj4 = {foo: 'bar'};
+    tests.push(test(utils.objIsEmpty(obj1), true, 'objIsEmpty'));
+    tests.push(test(utils.objIsEmpty(obj2), true, 'objIsEmpty'));
+    tests.push(test(utils.objIsEmpty(obj3), true, 'objIsEmpty'));
+    tests.push(test(utils.objIsEmpty(obj4), false, 'objIsEmpty'));
+
     printResults(tests) 
 };
 run();
