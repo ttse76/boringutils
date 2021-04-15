@@ -85,11 +85,11 @@ const str2 = undefined;
 const str3 = 'hello world';
 
 // Returns ''
-utils.stringIsEmpty(str1);
+utils.stringUnNull(str1);
 
 // Returns ''
-utils.stringIsEmpty(str2);
+utils.stringUnNull(str2);
 
 // Returns 'hello world'
-utils.stringIsEmpty(str1);
+utils.stringUnNull(str1);
 ```
